@@ -71,13 +71,11 @@ def generate_keypair(bits: int = 1024, e: int = 65537) -> KeyPair:
     p = generate_large_prime(bits)
     q = generate_large_prime(bits)
 
-
     while p == q:
         q = generate_large_prime(bits)
 
     n = p * q
     phi = (p - 1) * (q - 1)
-
 
     if gcd(e, phi) != 1:
         candidate = 3
