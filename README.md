@@ -140,9 +140,7 @@ Key generation time grows steeply with prime size (driven by the cost of finding
 
 ## Author
 
-**Rifat** — 3rd-year BSc Engineering (ICT), Mawlana Bhashani Science and Technology University (MBSTU), Bangladesh.
-
-Related work: ["Performance and Efficiency Analysis of Modern Filesystems on Consumer-Grade NVMe SSDs Under Real-World Mixed Workloads"](https://ieeexplore.ieee.org/document/11546556) (IEEE, 2nd author).
+Moynul Rifat
 
 ## License
 
