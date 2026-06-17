@@ -1,5 +1,3 @@
-# RSA_CryptoSystem
-
 # 🔐 RSA Cryptosystem
 
 A from-scratch implementation of the RSA public-key cryptosystem in Python — covering key generation, encryption/decryption, a security analysis of why RSA's parameters matter, and both CLI and browser-based interactive demos.
