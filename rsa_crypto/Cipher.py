@@ -8,17 +8,17 @@ from rsa_crypto.keygen import PrivateKey, PublicKey
 
 
 def encrypt_int(message: int, public_key: PublicKey) -> int:
-                                                                                               """Encrypt using the public key: c = m^e mod n."""
+    """Encrypt using the public key: c = m^e mod n."""
     if message >= public_key.n:
         raise ValueError(
-             "Message integer must be smaller than the modulus n. "
+            "Message integer must be smaller than the modulus n. "
             "Use encrypt_message() for text longer than the key allows."
         )
     return pow(message, public_key.e, public_key.n)
 
 
 def decrypt_int(ciphertext: int, private_key: PrivateKey) -> int:
-                                                                                               """Decrypt using the private key: m = c^d mod n."""
+    """Decrypt using the private key: m = c^d mod n."""
     return pow(ciphertext, private_key.d, private_key.n)
 
 
@@ -40,7 +40,7 @@ def encrypt_message(message: str, public_key: PublicKey) -> list[int]:
 
 
 def decrypt_message(ciphertext_blocks: list[int], private_key: PrivateKey) -> str:
-                                                                                                """Decrypt a list of ciphertext blocks."""
+    """Decrypt a list of ciphertext blocks."""
     decoded_bytes = bytearray()
     for block in ciphertext_blocks:
         block_int = decrypt_int(block, private_key)
