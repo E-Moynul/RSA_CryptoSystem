@@ -1,3 +1,4 @@
+[crypto_gif.webm](https://github.com/user-attachments/assets/f67509aa-0fc6-4bde-876b-c4f99e5511c9)
 # 🔐 RSA Cryptosystem
 
 A from-scratch implementation of the RSA public-key cryptosystem in Python — covering key generation, encryption/decryption, a security analysis of why RSA's parameters matter, and both CLI and browser-based interactive demos.
