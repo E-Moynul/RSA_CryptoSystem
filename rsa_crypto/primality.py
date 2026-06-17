@@ -8,7 +8,7 @@ import random
 
 
 def is_prime_miller_rabin(n: int, rounds: int = 40) -> bool:
-                                                                                 """Miller-Rabin probabilistic primality test."""
+    """Miller-Rabin probabilistic primality test."""
     if n < 2:
         return False
     if n in (2, 3):
@@ -42,7 +42,7 @@ def is_prime_miller_rabin(n: int, rounds: int = 40) -> bool:
 
 
 def generate_prime_candidate(bits: int) -> int:
-                                                                                      """Generate a random odd integer with the top and bottom bits set."""
+    """Generate a random odd integer with the top and bottom bits set."""
     candidate = random.getrandbits(bits)
     candidate |= (1 << bits - 1) | 1
     return candidate
